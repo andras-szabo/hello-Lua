@@ -43,6 +43,7 @@ function anagram(a, b)
 	return true
 end
 
+-- Removes only the FIRST instance of given letter; returns the string without the letter in question
 function removeLetter(word, letter)
 	found = false
 	place = 1
