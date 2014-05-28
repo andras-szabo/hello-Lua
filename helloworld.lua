@@ -90,6 +90,14 @@ function bubbleSort(array)
 	return array
 end
 
+function testAnagrams(a, b)
+	if anagram(a,b) then
+		print("\'" .. a .. "\' and \'" .. b .. "\' are anagrams")
+	else
+		print("\'" .. a .. "\' and \'" .. b .. "\' are not anagrams")
+	end
+end
+
 print("Testing bubblesort")
 
 array = { 1, 2, 15, 9898, 0, -3, -294, 45, 16, 32, 0, 28 }
@@ -98,3 +106,11 @@ array = bubbleSort(array)
 for i = 1, #array do
 	print(array[i])
 end
+
+print("\nTesting letter removal")
+print(removeLetter("The quick brown dog jumps over the lazy fox","q"))
+print("\nTesting anagrams")
+testAnagrams("arctic monkeys","moany crickets")
+testAnagrams("robot","rolls royce")
+testAnagrams("Upper Case","uPPer cASE")
+
