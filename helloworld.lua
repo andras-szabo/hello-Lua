@@ -81,7 +81,7 @@ function bubbleSort(array)
 			if array[i] > array[i+1] then
 				tmp = array[i]
 				array[i] = array[i+1]
-				array[i+1] = array[i]
+				array[i+1] = tmp
 				cont = true
 			end
 			i = i + 1
