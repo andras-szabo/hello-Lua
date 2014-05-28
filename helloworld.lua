@@ -70,3 +70,31 @@ function arraySum(array)
 	end
 	return sum
 end
+
+function bubbleSort(array)
+	cont = true
+	length = #array
+	while cont == true do
+		i = 1
+		cont = false
+		while i + 1 <= length do
+			if array[i] > array[i+1] then
+				tmp = array[i]
+				array[i] = array[i+1]
+				array[i+1] = array[i]
+				cont = true
+			end
+			i = i + 1
+		end
+	end
+	return array
+end
+
+print("Testing bubblesort")
+
+array = { 1, 2, 15, 9898, 0, -3, -294, 45, 16, 32, 0, 28 }
+array = bubbleSort(array)
+
+for i = 1, #array do
+	print(array[i])
+end
