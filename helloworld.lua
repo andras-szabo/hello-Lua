@@ -62,3 +62,11 @@ function removeLetter(word, letter)
 
 	return firstHalf .. secondHalf
 end
+
+function arraySum(array)
+	sum = 0
+	for i = 1, #array do
+		sum = sum + array[i]
+	end
+	return sum
+end
