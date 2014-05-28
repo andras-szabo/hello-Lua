@@ -6,7 +6,7 @@ as per reddit's Daily Programmer Challenge #164.
 
 http://www.reddit.com/r/dailyprogrammer/comments/26ijiu/5262014_challenge_164_easy_assemble_this_scheme/
 
-"Description
+"Description:
 You have just been hired by the company 'Super-Corp 5000' and they require you to be up to speed on a 
 new programming language you haven't yet tried.
 
